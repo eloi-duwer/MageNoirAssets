@@ -1,0 +1,81 @@
+{
+    "id": 65,
+    "cardTypeId": 1,
+    "name": "Marée",
+    "costs": [
+        {
+            "statId": 4,
+            "baseValue": 2,
+            "$type": "CCGKit.PayResourceCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Piochez 1 carte, puis défaussez-vous d'1 carte en main.\n\nMettez la Mana verrouillée par ce sort sous un autre sort que vous contrôlez.\n\nPuis vous pouvez payer 1 Mana Eau pour aller chercher 1 carte Marée dans votre défausse, et la mettre dans votre main.",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "water",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "C",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "water/tide",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 65,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Jeffrey Jeanson",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Piochez {0} {0:carte|cartes}, puis défaussez-vous {1:d'|de }{1} {1:carte|cartes} en main.\n\nMettez la Mana verrouillée par ce sort sous un autre sort que vous contrôlez.\n\nPuis vous pouvez payer {2} Mana Eau pour aller chercher {3} {3:carte|cartes} Marée dans votre défausse, et {3:la|les} mettre dans votre main.",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [],
+    "abilities": []
+}

@@ -1,0 +1,93 @@
+{
+    "id": 54,
+    "cardTypeId": 1,
+    "name": "Vague déferlante",
+    "costs": [
+        {
+            "statId": 4,
+            "baseValue": 3,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "keywordId": 1,
+            "keywordValueId": 8,
+            "baseValue": 1,
+            "$type": "MageNoir.ComponentCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Inflige 3 points de dégâts à n'importe quelle cible (ou 4 si vous êtes Mage Noir).",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "water",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "C",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "water/surging_wave",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 54,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Charles Ouvrard",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Inflige {0} {0:point|points} de dégâts à n'importe quelle cible (ou {1} si vous êtes Mage Noir).",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [
+        {
+            "keywordId": 1,
+            "keywordValueId": 7,
+            "$type": "CCGKit.RuntimeKeyword"
+        }
+    ],
+    "abilities": []
+}

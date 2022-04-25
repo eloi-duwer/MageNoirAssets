@@ -1,0 +1,97 @@
+{
+    "id": 33,
+    "cardTypeId": 2,
+    "name": "Robe brûlante",
+    "costs": [
+        {
+            "statId": 3,
+            "baseValue": 1,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "statId": 5,
+            "baseValue": 1,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "keywordId": 1,
+            "keywordValueId": 2,
+            "baseValue": 2,
+            "$type": "MageNoir.ComponentCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Chaque fois qu'un sort Feu que vous contrôlez inflige des dégâts à une cible adverse, ils sont augmentés de 1 (ou 2 si vous êtes Mage Noir). Puis, Robe brûlante vous inflige 1 point de dégâts.",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "fire",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "R",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "fire/burning_robe",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 33,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Camille Fourcade",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Chaque fois qu'un sort Feu que vous contrôlez inflige des dégâts à une cible adverse, ils sont augmentés de {0} (ou {1} si vous êtes Mage Noir). Puis, Robe brûlante vous inflige {2} {2:point|points} de dégâts.",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [
+        {
+            "keywordId": 2,
+            "keywordValueId": 0
+        }
+    ],
+    "abilities": []
+}

@@ -1,0 +1,93 @@
+{
+    "id": 40,
+    "cardTypeId": 1,
+    "name": "Vents favorables",
+    "costs": [
+        {
+            "statId": 2,
+            "baseValue": 2,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "keywordId": 1,
+            "keywordValueId": 5,
+            "baseValue": 1,
+            "$type": "MageNoir.ComponentCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Ce tour-ci, vous pouvez échanger la Mana Air à 1 pour 1 dans les deux sens.\n\nRenvoyez 1 composant Souffle que vous contrôlez dans votre deck en troisième position à partir du dessus.",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "air",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "C",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "air/favorable_winds",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 40,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Jeffrey Jeanson",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Ce tour-ci, vous pouvez échanger la Mana Air à 1 pour 1 dans les deux sens.\n\nRenvoyez {0} {0:composant|composants} Souffle que vous contrôlez dans votre deck en troisième position à partir du dessus.",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [
+        {
+            "keywordId": 1,
+            "keywordValueId": 6,
+            "$type": "CCGKit.RuntimeKeyword"
+        }
+    ],
+    "abilities": []
+}

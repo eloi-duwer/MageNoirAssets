@@ -1,0 +1,102 @@
+{
+    "id": 12,
+    "cardTypeId": 2,
+    "name": "Armure d'écorce",
+    "costs": [
+        {
+            "statId": 5,
+            "baseValue": 2,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "keywordId": 1,
+            "keywordValueId": 1,
+            "baseValue": 1,
+            "$type": "MageNoir.ComponentCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Chaque tour, ignorez jusqu'à 1 point de dégâts adverses qui vous sont infligés.",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "vegetal",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "C",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "vegetal/bark_armor",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 12,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Jessica Heran",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Chaque tour, ignorez jusqu'à {0} point de dégâts adverses qui vous sont infligés.",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [
+        {
+            "keywordId": 1,
+            "keywordValueId": 14,
+            "$type": "CCGKit.RuntimeKeyword"
+        },
+        {
+            "keywordId": 1,
+            "keywordValueId": 3,
+            "$type": "CCGKit.RuntimeKeyword"
+        },
+        {
+            "keywordId": 2,
+            "keywordValueId": 0
+        }
+    ],
+    "abilities": []
+}

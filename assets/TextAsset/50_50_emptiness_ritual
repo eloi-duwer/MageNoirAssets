@@ -1,0 +1,86 @@
+{
+    "id": 50,
+    "cardTypeId": 3,
+    "name": "Rituel du vide",
+    "costs": [
+        {
+            "statId": 7,
+            "baseValue": 3,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "statId": 2,
+            "baseValue": 2,
+            "$type": "CCGKit.PayResourceCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Vous passez Mage Noir.\n\nVotre taille de main maximale devient 4. Défaussez-vous immédiatement pour avoir 4 cartes maximum en main.\n\nDurant votre tour, défaussez 1 carte de votre main pour infliger 1 point de dégâts à n'importe quelle cible.\n<i>(Vous pouvez le faire plusieurs fois par tour)</i>",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "air",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "L",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "air/emptiness_ritual",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 50,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Geoffrey Amesse",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Vous passez Mage Noir.\n\nVotre taille de main maximale devient {0}. Défaussez-vous immédiatement pour avoir {0} {0:carte|cartes} maximum en main.\n\nDurant votre tour, défaussez une carte de votre main pour infliger {1} {1:point|points} de dégâts à n'importe quelle cible.\n<i>(Vous pouvez le faire plusieurs fois par tour)</i>",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [],
+    "abilities": []
+}

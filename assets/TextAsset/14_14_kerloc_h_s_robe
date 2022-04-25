@@ -1,0 +1,97 @@
+{
+    "id": 14,
+    "cardTypeId": 2,
+    "name": "Robe de Kerloc'h",
+    "costs": [
+        {
+            "statId": 5,
+            "baseValue": 2,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "statId": 7,
+            "baseValue": 2,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "keywordId": 1,
+            "keywordValueId": 4,
+            "baseValue": 2,
+            "$type": "MageNoir.ComponentCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Les dégâts des sorts Végétaux (dont Permanents) que vous contrôlez sont augmentés de 3.\n\nLes dégâts qui vous sont infligés sont réduits de 2.\n\nA tout moment, vous pouvez détruire cet Équipement et défausser toute votre main pour annuler les dégâts qui vous sont infligés jusqu'à la fin du tour.",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "vegetal",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "L",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "vegetal/kerloc_h_s_robe",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 14,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Jessica Heran",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Les dégâts des sorts Végétaux (dont Permanents) que vous contrôlez sont augmentés de {0}.\n\nLes dégâts qui vous sont infligés sont réduits de {1}.\n\nA tout moment, vous pouvez détruire cet Équipement et défausser toute votre main pour annuler les dégâts qui vous sont infligés jusqu'à la fin du tour.",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [
+        {
+            "keywordId": 2,
+            "keywordValueId": 0
+        }
+    ],
+    "abilities": []
+}

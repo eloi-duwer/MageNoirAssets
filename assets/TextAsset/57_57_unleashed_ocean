@@ -1,0 +1,93 @@
+{
+    "id": 57,
+    "cardTypeId": 0,
+    "name": "Océan déchainé",
+    "costs": [
+        {
+            "statId": 4,
+            "baseValue": 1,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "keywordId": 1,
+            "keywordValueId": 7,
+            "baseValue": 2,
+            "$type": "MageNoir.ComponentCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Au début de votre tour, vos composants Vague appliquent leurs effets.\n\nPuis, ce sort libère 1 Mana Eau pour chaque composant Vague que vous contrôlez.\n\nDétruisez ce sort dès qu'il ne verrouille plus de Mana Eau.",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "water",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "L",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "water/unleashed_ocean",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 57,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Camille Fourcade",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Au début de votre tour, vos composants Vague appliquent leurs effets.\n\nPuis, ce sort libère {0} Mana Eau pour chaque composant Vague que vous contrôlez.\n\nDétruisez ce sort dès qu'il ne verrouille plus de Mana Eau.",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [
+        {
+            "keywordId": 1,
+            "keywordValueId": 10,
+            "$type": "CCGKit.RuntimeKeyword"
+        }
+    ],
+    "abilities": []
+}

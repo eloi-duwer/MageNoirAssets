@@ -1,0 +1,87 @@
+{
+    "id": 52,
+    "cardTypeId": 1,
+    "name": "Goutte d'eau",
+    "costs": [
+        {
+            "statId": 4,
+            "baseValue": 1,
+            "$type": "CCGKit.PayResourceCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Tant que ce sort est canalisé comme composant, une fois par tour, peut être considéré par un autre sort comme étant 2 composants Goutte.\n\nSi vous êtes Mage Noir, compte toujours comme 2 composants Goutte.",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "water",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "C",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "water/water_drop",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 52,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Camille Fourcade",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Tant que ce sort est canalisé comme composant, une fois par tour, peut être considéré par un autre sort comme étant {0} {0:composant|composants} Goutte.\n\nSi vous êtes Mage Noir, compte toujours comme {0} {0:composant|composants} Goutte.",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [
+        {
+            "keywordId": 1,
+            "keywordValueId": 8,
+            "$type": "CCGKit.RuntimeKeyword"
+        }
+    ],
+    "abilities": []
+}

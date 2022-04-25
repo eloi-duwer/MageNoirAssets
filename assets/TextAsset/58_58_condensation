@@ -1,0 +1,92 @@
+{
+    "id": 58,
+    "cardTypeId": 1,
+    "name": "Condensation",
+    "costs": [
+        {
+            "statId": 4,
+            "baseValue": 1,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "statId": 3,
+            "baseValue": 1,
+            "$type": "CCGKit.PayResourceCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Tant que ce sort est en préparation, au début de votre tour, mettez 1 Mana Eau de l'Éther Infini sous ce sort.\n\nLorsque vous l'activez, répartissez la Mana verrouillée sous Condensation entre votre réserve de Mana et vos sorts.",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "water",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "U",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "water/condensation",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 58,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Jeffrey Jeanson",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Tant que ce sort est en préparation, au début de votre tour, mettez {0} Mana Eau de l'Éther Infini sous ce sort.\n\nLorsque vous l'activez, répartissez la Mana verrouillée sous Condensation entre votre réserve de Mana et vos sorts.",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [
+        {
+            "keywordId": 1,
+            "keywordValueId": 9,
+            "$type": "CCGKit.RuntimeKeyword"
+        }
+    ],
+    "abilities": []
+}

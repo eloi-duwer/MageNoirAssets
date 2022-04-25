@@ -1,0 +1,81 @@
+{
+    "id": 63,
+    "cardTypeId": 0,
+    "name": "Inflitration subtile",
+    "costs": [
+        {
+            "statId": 4,
+            "baseValue": 2,
+            "$type": "CCGKit.PayResourceCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "A chaque fois que vous échangez de la Mana Eau avec l'Ether Disponible, inflige 1 point de dégâts à l'adversaire, puis libère 1 Mana verrouillée par ce sort.\n\nDès qu'il ne verrouille plus de Mana, détruisez ce sort, puis vous pouvez prendre jusqu'à 2 Mana Eau dans l'Ether disponible.",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "water",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "C",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "water/subtle_infiltration",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 63,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Geoffrey Amesse",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "A chaque fois que vous échangez de la Mana Eau avec l'Ether Disponible, inflige {0} {0:point|points} de dégâts à l'adversaire, puis libère {1} Mana verrouillée par ce sort.\n\nDès qu'il ne verrouille plus de Mana, détruisez ce sort, puis vous pouvez prendre jusqu'à {2} Mana Eau dans l'Ether disponible.",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [],
+    "abilities": []
+}

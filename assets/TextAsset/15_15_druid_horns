@@ -1,0 +1,96 @@
+{
+    "id": 15,
+    "cardTypeId": 2,
+    "name": "Cornes de druide",
+    "costs": [
+        {
+            "statId": 7,
+            "baseValue": 3,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "statId": 5,
+            "baseValue": 1,
+            "$type": "CCGKit.PayResourceCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "A tout moment, vous pouvez regarder la carte du dessus de votre deck. Si c'est une Graine, montrez-la à votre adversaire et mettez-la dans votre main.\n\nVos Graines coûtent 1 Mana Végétal de moins. \nSi vous êtes Mage Noir, vos Graines coûtent 0 Mana.",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "vegetal",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "R",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "vegetal/druid_horns",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 15,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Jessica Heran",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "A tout moment, vous pouvez regarder la carte du dessus de votre deck. Si c'est une Graine, montrez-la à votre adversaire et mettez-la dans votre main.\n\nVos Graines coûtent {0} Mana Végétal de moins. \nSi vous êtes Mage Noir, vos Graines coûtent {1} Mana.",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [
+        {
+            "keywordId": 1,
+            "keywordValueId": 4,
+            "$type": "CCGKit.RuntimeKeyword"
+        },
+        {
+            "keywordId": 2,
+            "keywordValueId": 1
+        }
+    ],
+    "abilities": []
+}

@@ -1,0 +1,88 @@
+{
+    "id": 45,
+    "cardTypeId": 1,
+    "name": "Typhon",
+    "costs": [
+        {
+            "keywordId": 1,
+            "keywordValueId": 6,
+            "baseValue": 1,
+            "$type": "MageNoir.ComponentCost"
+        },
+        {
+            "keywordId": 1,
+            "keywordValueId": 7,
+            "baseValue": 1,
+            "$type": "MageNoir.ComponentCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Inflige 6 points de dégâts à n'importe quelle cible.\n\nDéfausse jusqu'à 3 sorts en préparation de l'adversaire.\n\nRenvoyez 1 composant Vent que vous contrôlez dans votre deck en troisième position à partir du dessus.",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "air",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "L",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "air/typhoon",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 45,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Jeffrey Jeanson",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Inflige {0} {0:point|points} de dégâts à n'importe quelle cible.\n\nDéfausse jusqu'à {1} {1:sort|sorts} en préparation de l'adversaire.\n\nRenvoyez {2} {2:composant|composants} Vent que vous contrôlez dans votre deck en troisième position à partir du dessus.",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [],
+    "abilities": []
+}

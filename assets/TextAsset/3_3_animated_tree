@@ -1,0 +1,112 @@
+{
+    "id": 3,
+    "cardTypeId": 0,
+    "name": "Arbre animé",
+    "costs": [
+        {
+            "statId": 5,
+            "baseValue": 3,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "statId": 4,
+            "baseValue": 1,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "keywordId": 1,
+            "keywordValueId": 0,
+            "baseValue": 1,
+            "$type": "MageNoir.ComponentCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Lorsqu'il arrive en jeu, défausse la Graine utilisée comme composant.\n\nAu début de votre tour, inflige 2 points de dégâts à l'adversaire, puis vous pouvez mettre 1 Graine en préparation depuis votre défausse.\n\nProtecteur <i>(Vous pouvez rediriger les dégâts adverses sur ce Permanent.)</i>",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "vegetal",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "C",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "vegetal/animated_tree",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 3,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Camille Fourcade",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Lorsqu'il arrive en jeu, défausse la Graine utilisée comme composant.\n\nAu début de votre tour, inflige {0} {0:point|points} de dégâts à l'adversaire, puis vous pouvez mettre {1} Graine en préparation depuis votre défausse.\n\nProtecteur <i>(Vous pouvez rediriger les dégâts adverses sur ce Permanent.)</i>",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [
+        {
+            "baseValue": 3,
+            "statId": 0,
+            "name": "Life",
+            "originalValue": 3,
+            "minValue": 0,
+            "maxValue": 99,
+            "modifiers": []
+        }
+    ],
+    "keywords": [
+        {
+            "keywordId": 1,
+            "keywordValueId": 1,
+            "$type": "CCGKit.RuntimeKeyword"
+        },
+        {
+            "keywordId": 0,
+            "keywordValueId": 1
+        }
+    ],
+    "abilities": []
+}

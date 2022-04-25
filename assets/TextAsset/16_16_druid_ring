@@ -1,0 +1,96 @@
+{
+    "id": 16,
+    "cardTypeId": 2,
+    "name": "Anneau du druide",
+    "costs": [
+        {
+            "statId": 5,
+            "baseValue": 3,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "statId": 6,
+            "baseValue": 1,
+            "$type": "CCGKit.PayResourceCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Les dégâts infligés par les Permanents Végétaux que vous contrôlez sont augmentés de 2.\n\nSi vous êtes Mage Noir, lorsque vous ajoutez de la Mana dans l'Ether disponible au début de votre tour, ajoutez 1 Mana Végétal supplémentaire.",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "vegetal",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "C",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "vegetal/druid_ring",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 16,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Camille Fourcade",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Les dégâts infligés par les Permanents Végétaux que vous contrôlez sont augmentés de {0}.\n\nSi vous êtes Mage Noir, lorsque vous ajoutez de la Mana dans l'Ether disponible au début de votre tour, ajoutez {1} Mana Végétal supplémentaire.",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [
+        {
+            "keywordId": 1,
+            "keywordValueId": 4,
+            "$type": "CCGKit.RuntimeKeyword"
+        },
+        {
+            "keywordId": 2,
+            "keywordValueId": 7
+        }
+    ],
+    "abilities": []
+}

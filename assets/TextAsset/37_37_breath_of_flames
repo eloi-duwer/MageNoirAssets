@@ -1,0 +1,101 @@
+{
+    "id": 37,
+    "cardTypeId": 1,
+    "name": "Souffle de flammes",
+    "costs": [
+        {
+            "statId": 2,
+            "baseValue": 1,
+            "$type": "CCGKit.PayResourceCost"
+        },
+        {
+            "statId": 3,
+            "baseValue": 1,
+            "$type": "CCGKit.PayResourceCost"
+        }
+    ],
+    "properties": [
+        {
+            "value": "Inflige 3 points de dégâts à 1 Permanent. Ils ne peuvent pas être ignorés, réduits, ni redirigés.\n\nAprès que ce sort est utilisé comme composant, défaussez-le. Vous pouvez payer 1 Mana Feu ou Air pour ne pas le défausser.",
+            "name": "Text",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "air",
+            "name": "Element",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "U",
+            "name": "Rarity",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "air/breath_of_flames",
+            "name": "Picture",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 4,
+            "name": "MaxCopies",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": null,
+            "name": "Material",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": 37,
+            "name": "CollectorNumber",
+            "$type": "CCGKit.IntProperty"
+        },
+        {
+            "value": "Jeffrey Jeanson",
+            "name": "Illustrator",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "Classique",
+            "name": "Layout",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "name": "Edition",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": "{0:choose(-1|0|1|2):Inflige {0} {0:point|points} de dégâts à {1} {1:Permanent|Permanents}. Ils ne peuvent pas être ignorés, réduits, ni redirigés.\n\nAprès que ce sort est utilisé comme composant, défaussez-le. Vous pouvez payer {2} Mana Feu ou Air pour ne pas le défausser.|Défaussez ce sort|Payez {2} Mana Feu.|Payez {2} Mana Air.}",
+            "name": "DynamicText",
+            "$type": "CCGKit.StringProperty"
+        },
+        {
+            "value": null,
+            "name": "DynamicTextParameters",
+            "$type": "MageNoir.ListProperty"
+        },
+        {
+            "value": "Classic",
+            "name": "BoosterType",
+            "$type": "CCGKit.StringProperty"
+        }
+    ],
+    "stats": [],
+    "keywords": [
+        {
+            "keywordId": 1,
+            "keywordValueId": 5,
+            "$type": "CCGKit.RuntimeKeyword"
+        },
+        {
+            "keywordId": 1,
+            "keywordValueId": 2,
+            "$type": "CCGKit.RuntimeKeyword"
+        },
+        {
+            "keywordId": 0,
+            "keywordValueId": 2
+        }
+    ],
+    "abilities": []
+}
