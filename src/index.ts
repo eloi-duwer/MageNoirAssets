@@ -6,13 +6,11 @@ import Card from './Card'
 
 ;
 (async () => {
-
 	await fs.mkdir('./export').catch(_ => {/* probably EEXIST */})
 	const cardsFiles = await fs.readdir(config.TextFolder)
-	await Promise.all(cardsFiles.map(async cardFile => {
+	cardsFiles.map(async cardFile => {
 		const cardAsset: Asset.Card = JSON.parse((await fs.readFile(path.join(config.TextFolder, cardFile))).toString('utf-8'))
 		const card = new Card(cardAsset)
-		if (card.id === 3)
-			await card.exportImage()
-	}))
+		card.exportImage()
+	})
 })()

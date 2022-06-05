@@ -136,13 +136,14 @@ export default class Card {
 		return keyword.keyword
 	}
 
-	private writeText(ctx: canvas.CanvasRenderingContext2D, text: string, x: number, initY: number, maxWidth: number, lineHeight: number) {
+	private writeLine(ctx: canvas.CanvasRenderingContext2D, lineText: string, x: number, initY: number, maxWidth: number, lineHeight: number): number {
 		// https://stackoverflow.com/a/16599668/12121518
-		const words = text.split(" ");
+		const words = lineText.split(" ");
 		const lines = [];
 		let currentLine = words[0];
+		let currentY = initY
 
-		for (var i = 1; i <= words.length; i++) {
+		for (var i = 1; i < words.length; i++) {
 			var word = words[i];
 			var width = ctx.measureText(currentLine + " " + word).width;
 			if (width < maxWidth) {
@@ -153,12 +154,23 @@ export default class Card {
 			}
 		}
 		lines.push(currentLine)
-		lines.forEach((line, i) => {
-			const measure = ctx.measureText(line)
-			const y = initY + ((measure.actualBoundingBoxAscent + measure.actualBoundingBoxDescent) + lineHeight) * i
-			console.log(`'${line}'`, x, y, i, measure.actualBoundingBoxAscent, measure.actualBoundingBoxDescent)
-			ctx.fillText(line, x, y)
+		lines.forEach(line => {
+			currentY += lineHeight
+			ctx.fillText(line, x, currentY)
 		})
+		return currentY
+	}
+
+	private writeText(ctx: canvas.CanvasRenderingContext2D, text: string, x: number, initY: number, maxWidth: number) {
+		const textHeight = 10
+		ctx.font = `${textHeight}px Georgia`
+		text = text.replace(/<\/?.*?>/g, '')
+		const lines = text.split('\n')
+		let y = initY
+		lines.forEach(line => {
+			y = this.writeLine(ctx, line, x, y, maxWidth, textHeight)
+		})
+		return y
 	}
 
 	public async exportImage() {
@@ -208,8 +220,7 @@ export default class Card {
 			i++
 		}
 		// Text
-		ctx.font = '10px Georgia'
-		this.writeText(ctx, this.text, 16, 300, image_width - 16, 0)
+		this.writeText(ctx, this.text, 16, 275, image_width - 16)
 		await fs.writeFile(config.exportCard(this.illustration), c.toBuffer(), {flag: 'w'})
 		console.log(`exported ${config.exportCard(this.illustration)}`)
 	}
