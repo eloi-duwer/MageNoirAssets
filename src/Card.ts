@@ -173,16 +173,12 @@ export default class Card {
 		return y
 	}
 
-	public async exportImage() {
-		const image_width = 295
-		const image_height = 412
-		const c = canvas.createCanvas(image_width, image_height)
-		const ctx = c.getContext("2d")
-
-		// Background
+	private async writeBackground(ctx: canvas.CanvasRenderingContext2D, image_width: number, image_height: number) {
 		await canvas.loadImage(config.cardBackground(this.element))
 			.then(img => ctx.drawImage(img, 0, 0, image_width, image_height))
-		// Illustration
+	}
+
+	private async writeIllustration(ctx: canvas.CanvasRenderingContext2D, image_height: number) {
 		await canvas.loadImage(config.sprite(this.illustration))
 			.then(img => {
 				const targetWith = image_height - 58
@@ -190,13 +186,17 @@ export default class Card {
 				const ratio = targetHeight / targetWith
 				return ctx.drawImage(img, 0, 0, img.width, img.width * ratio, 8, 56, targetWith, targetHeight)
 			})
-		// Title
-		ctx.font = '20px Georgia'
+	}
+	
+	private writeTitle(ctx: canvas.CanvasRenderingContext2D, image_width: number) {
+		ctx.font = '15px Georgia'
 		ctx.textAlign = 'center'
 		ctx.fillText(this.name, image_width / 2 + 20, 35)
-		// Costs
+	}
+
+	private async writeCosts(ctx: canvas.CanvasRenderingContext2D) {
 		let i = 0
-		ctx.font = '20px Georgia'
+		ctx.font = '16px Georgia'
 		ctx.textAlign = 'left'
 		for (let cost of this.costs) {
 			const x = 10 + i * 25
@@ -205,7 +205,7 @@ export default class Card {
 			if (cost.type === 'resource') {
 				await canvas.loadImage(config.cost(cost.element))
 					.then(img => ctx.drawImage(img, x + 4, 25, 15, 15))
-				ctx.fillText(cost.quantity.toString(), x + 7, 55)
+				ctx.fillText(cost.quantity.toString(), x + 7, 60)
 			} else if (cost.type === 'keyword') {
 				const text = `${cost.keyword} X${cost.quantity}`
 				ctx.save()
@@ -219,8 +219,40 @@ export default class Card {
 			}
 			i++
 		}
-		// Text
+	}
+
+	private writeCardType(ctx: canvas.CanvasRenderingContext2D) {
+		ctx.font = 'italic 12px Georgia'
+		ctx.fillText(this.type, 16, 270)
+	}
+
+	private async writeLife(ctx: canvas.CanvasRenderingContext2D) {
+		ctx.font = '20px Georgia'
+		if (this.stats) {
+			for (const stat of this.stats) {
+				if (stat.name === 'Life') {
+					await canvas.loadImage(config.heart)
+						.then(img => ctx.drawImage(img, 230, 383, 18, 18))
+					ctx.fillText(stat.baseValue.toString(), 250, 400)
+				}
+			}
+		}
+	}
+
+	public async exportImage() {
+		const image_width = 295
+		const image_height = 412
+		const c = canvas.createCanvas(image_width, image_height)
+		const ctx = c.getContext("2d")
+
+		await this.writeBackground(ctx, image_width, image_height)
+		await this,this.writeIllustration(ctx, image_height)
+		this.writeTitle(ctx, image_width)
+		await this.writeCosts(ctx)
 		this.writeText(ctx, this.text, 16, 275, image_width - 16)
+		this.writeCardType(ctx)
+		await this.writeLife(ctx)
+
 		await fs.writeFile(config.exportCard(this.illustration), c.toBuffer(), {flag: 'w'})
 		console.log(`exported ${config.exportCard(this.illustration)}`)
 	}

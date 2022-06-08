@@ -1,6 +1,7 @@
 export default {
 	"TextFolder": "./assets/TextAsset",
 	"banner": './assets/Costs/banner.png',
+	"heart": './assets/CardBackgrounds/heart_empty.png',
 	"cost": (element: string) => `./assets/Costs/${element}.png`,
 	"sprite": (cardName: string) => `./assets/Sprite/${cardName}.png`,
 	"cardBackground": (type: string) => `./assets/CardBackgrounds/card_background_${type}_for_game.png`,
